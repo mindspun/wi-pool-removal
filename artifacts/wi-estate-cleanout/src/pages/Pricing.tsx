@@ -7,22 +7,28 @@ import Breadcrumb from "@/components/Breadcrumb";
 
 const tiers = [
   {
-    name: "Small Load",
-    range: "$250",
-    description: "Up to roughly a quarter of our trailer — a few items, a couple pieces of furniture, or a small room's worth of junk.",
+    name: "Quarter Load",
+    range: "$275",
+    description: "Up to a quarter of our 7×16×4 trailer — a few items, a couple pieces of furniture, or a small room's worth of junk.",
     examples: ["1–3 pieces of furniture", "A few appliances", "Small room cleanout", "Miscellaneous bags of junk"],
   },
   {
     name: "Half Load",
-    range: "$400",
+    range: "$425",
     description: "Approximately half our 7×16×4 trailer — a full garage, a basement, or several rooms of accumulated belongings.",
     examples: ["Full garage cleanout", "Basement cleanout", "3–4 rooms of furniture", "Estate partial clearance"],
+  },
+  {
+    name: "Three-Quarter Load",
+    range: "$575",
+    description: "About three-quarters of our 7×16×4 trailer — larger estates, multiple rooms, or a combination of indoor and outdoor items.",
+    examples: ["Large garage + basement", "Multiple-room cleanout", "Shed and interior combo", "Larger estate clearance"],
     highlighted: true,
   },
   {
     name: "Full Load",
     range: "$750",
-    description: "A completely full 7×16×4 trailer — the right choice for whole-home estate cleanouts, large hoarding situations, and full property clearances.",
+    description: "A completely full 7×16×4 trailer — whole-home estate cleanouts, large hoarding situations, and full property clearances.",
     examples: ["Full estate cleanout", "Whole-home clearance", "Large hoarding cleanup", "Full property clearance"],
   },
 ];
@@ -79,7 +85,7 @@ export default function Pricing() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 mb-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 mb-14">
           {tiers.map((tier) => (
             <div
               key={tier.name}
