@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/wi-furniture-disposal/"
+title = "WI Furniture Disposal"
+version = "1.0.0"
+id = "artifacts/wi-furniture-disposal"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/wi-furniture-disposal/" ]
+localPort = 24652
+
+[services.development]
+run = "pnpm --filter @workspace/wi-furniture-disposal run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/wi-furniture-disposal", "run", "build" ]
+publicDir = "artifacts/wi-furniture-disposal/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24652"
+BASE_PATH = "/wi-furniture-disposal/"

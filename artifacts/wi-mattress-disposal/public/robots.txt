@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wi-mattress-disposal.replit.app/sitemap.xml

@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/wi-mattress-disposal/"
+title = "WI Mattress Disposal"
+version = "1.0.0"
+id = "artifacts/wi-mattress-disposal"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/wi-mattress-disposal/" ]
+localPort = 20836
+
+[services.development]
+run = "pnpm --filter @workspace/wi-mattress-disposal run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/wi-mattress-disposal", "run", "build" ]
+publicDir = "artifacts/wi-mattress-disposal/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20836"
+BASE_PATH = "/wi-mattress-disposal/"
