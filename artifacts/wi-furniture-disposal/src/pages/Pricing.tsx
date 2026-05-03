@@ -9,39 +9,39 @@ const tiers = [
   {
     name: "Quarter Load",
     price: "$275",
-    description: "Up to a quarter of our 7×16×4 trailer — a few pieces of furniture or a small room's worth of items.",
+    description: "Up to a quarter of our 7×16×4 trailer — a few pieces of furniture or a small room's worth of furniture.",
     examples: ["1–3 pieces of furniture", "Single sofa or sectional", "A dresser and a few chairs", "Small room clearout"],
   },
   {
     name: "Half Load",
     price: "$425",
-    description: "Approximately half our 7×16×4 trailer — a full bedroom set, a living room, or several pieces across multiple rooms.",
+    description: "Approximately half our 7×16×4 trailer — a full bedroom set, a living room, or several pieces across multiple rooms of furniture.",
     examples: ["Full bedroom set", "Living room furniture", "4–6 pieces mixed", "Office furniture clearout"],
   },
   {
     name: "Three-Quarter Load",
     price: "$575",
-    description: "About three-quarters of our 7×16×4 trailer — larger jobs combining multiple rooms or a mix of indoor and outdoor furniture.",
+    description: "About three-quarters of our 7×16×4 trailer — larger furniture jobs combining multiple rooms or a mix of indoor and outdoor pieces.",
     examples: ["Multiple rooms of furniture", "Apartment clearout", "Indoor + outdoor combo", "Larger estate furniture"],
     highlighted: true,
   },
   {
     name: "Full Load",
     price: "$750",
-    description: "A completely full 7×16×4 trailer — whole-home furniture clearouts, commercial properties, or large rental turnovers.",
+    description: "A completely full 7×16×4 trailer — whole-home furniture removal, commercial properties, or large rental turnovers.",
     examples: ["Whole-home clearout", "Commercial property", "Large rental turnover", "Full estate furniture"],
   },
 ];
 
 const faqs = [
-  { q: "How exactly is pricing determined?", a: "We price by the volume of space your furniture takes up in our truck — not by the hour, and not by item count. The ranges above cover most jobs; call or text for a fast quote." },
+  { q: "How exactly is pricing determined?", a: "We price by the volume of furniture in our truck — not by the hour, and not by item count. The ranges above cover most furniture removal jobs; call or text for a fast quote." },
   { q: "Does the price include labor and disposal?", a: "Yes. Every quote includes our crew's labor, loading, hauling, and responsible disposal. There are no add-ons after the job is done." },
   { q: "Are there any hidden fees?", a: "No. The price we quote is the price you pay — no fuel surcharges, no dumping fees, no surprise charges." },
-  { q: "Do I need to move the furniture before you arrive?", a: "No. Our crew handles all the lifting. Tell us where the pieces are and we take it from there." },
+  { q: "Do I need to move the furniture before you arrive?", a: "No. Our crew handles all the lifting for furniture removal. Tell us where the pieces are and we take it from there." },
   { q: "Do you take broken or damaged furniture?", a: "Yes. Condition doesn't matter — broken frames, torn upholstery, old wood, whatever. We take it." },
   { q: "What counties do you serve?", a: "Washington, Ozaukee, Fond du Lac, Sheboygan, and Waukesha counties. Your location within those counties affects pricing." },
   { q: "Do you take commercial furniture?", a: "Yes. Office furniture, waiting room seating, restaurant furniture, cubicle systems — we handle commercial jobs." },
-  { q: "Can you pick up just one piece?", a: "Yes. Single-item pickups fall under our quarter-load minimum. Call or text and we'll confirm the price." },
+  { q: "Can you pick up just one piece?", a: "Yes. Single-item furniture pickups fall under our quarter-load minimum. Call or text and we'll confirm the price." },
 ];
 
 export default function Pricing() {
@@ -56,7 +56,7 @@ export default function Pricing() {
           <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Pricing" }]} />
           <h1 className="text-4xl font-extrabold text-foreground mb-4">Pricing</h1>
           <p className="text-muted-foreground text-lg max-w-2xl">
-            Transparent, volume-based pricing with no hidden fees. Prices include labor and disposal.
+            Transparent, volume-based furniture removal pricing with no hidden fees. Prices include labor and disposal.
           </p>
         </div>
       </div>
@@ -67,7 +67,7 @@ export default function Pricing() {
         <div className="text-center mb-4">
           <h2 className="text-2xl font-bold text-foreground mb-3">How We Price</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            We charge by load size — the amount of space your furniture occupies in our 7×16×4 trailer. You only pay for what we actually haul. All prices include labor and disposal.
+            We charge by load size — the amount of space your furniture occupies in our 7×16×4 trailer. You only pay for the furniture we actually haul. All prices include labor and disposal.
           </p>
         </div>
 
@@ -102,9 +102,9 @@ export default function Pricing() {
 
         {/* Always Included */}
         <div className="bg-muted/40 border border-border rounded p-6 mb-14 text-center">
-          <p className="text-foreground font-semibold text-lg mb-4">Every job includes:</p>
+          <p className="text-foreground font-semibold text-lg mb-4">Every furniture removal job includes:</p>
           <div className="flex flex-wrap justify-center gap-3">
-            {["Labor & loading by our crew", "Responsible disposal", "Licensed & insured service", "Price confirmed before we start", "On-time scheduling"].map((item) => (
+            {["Labor & loading by our crew", "Responsible furniture disposal", "Licensed & insured service", "Price confirmed before we start", "On-time scheduling"].map((item) => (
               <span key={item} className="flex items-center gap-1.5 text-sm text-foreground/80 bg-white border border-border rounded-full px-4 py-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-primary flex-shrink-0" />{item}
               </span>
