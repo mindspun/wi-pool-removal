@@ -25,3 +25,21 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - `pnpm --filter @workspace/api-server run dev` — run API server locally
 
 See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details.
+
+## Artifacts
+
+### WI Estate Cleanout (`artifacts/wi-estate-cleanout`)
+- **Type**: react-vite, static site (no backend)
+- **Preview path**: `/`
+- **Purpose**: Multi-page service website for WI Estate Cleanout, a junk removal and estate cleanout company based in West Bend, WI.
+- **Pages**: Home, About, Pricing, Contact, Service Areas overview, 5 county pages, 25 city pages
+- **Counties served**: Washington, Ozaukee, Fond du Lac, Sheboygan, Waukesha
+- **Phone**: 262-699-0100
+- **Contact form**: Links to Jobber (https://clienthub.getjobber.com/client_hubs/placeholder — update with real URL)
+- **Key files**:
+  - `src/data/serviceAreas.ts` — all county/city data in one place
+  - `src/components/Layout.tsx` — shared header/footer
+  - `src/components/CountyPage.tsx` — reusable county page template
+  - `src/components/CityPage.tsx` — reusable city page template
+  - `public/sitemap.xml` — full sitemap for all 31 pages
+  - `public/robots.txt` — SEO crawl config
