@@ -5,13 +5,43 @@ import Layout from "@/components/Layout";
 import CtaBanner from "@/components/CtaBanner";
 import Breadcrumb from "@/components/Breadcrumb";
 
+const tiers = [
+  {
+    name: "Quarter Load",
+    price: "$275",
+    description: "Up to a quarter of our 7×16×4 trailer — a few pieces of furniture or a small room's worth of items.",
+    examples: ["1–3 pieces of furniture", "Single sofa or sectional", "A dresser and a few chairs", "Small room clearout"],
+  },
+  {
+    name: "Half Load",
+    price: "$425",
+    description: "Approximately half our 7×16×4 trailer — a full bedroom set, a living room, or several pieces across multiple rooms.",
+    examples: ["Full bedroom set", "Living room furniture", "4–6 pieces mixed", "Office furniture clearout"],
+  },
+  {
+    name: "Three-Quarter Load",
+    price: "$575",
+    description: "About three-quarters of our 7×16×4 trailer — larger jobs combining multiple rooms or a mix of indoor and outdoor furniture.",
+    examples: ["Multiple rooms of furniture", "Apartment clearout", "Indoor + outdoor combo", "Larger estate furniture"],
+    highlighted: true,
+  },
+  {
+    name: "Full Load",
+    price: "$750",
+    description: "A completely full 7×16×4 trailer — whole-home furniture clearouts, commercial properties, or large rental turnovers.",
+    examples: ["Whole-home clearout", "Commercial property", "Large rental turnover", "Full estate furniture"],
+  },
+];
+
 const faqs = [
-  { q: "How do I get a price?", a: "Call or text 262-699-0100 with your location and a description of what you need removed. We'll quote you right then for most jobs." },
-  { q: "Do I need to move furniture before you arrive?", a: "No. Our crew handles all the lifting. Tell us where the pieces are and we take it from there." },
+  { q: "How exactly is pricing determined?", a: "We price by the volume of space your furniture takes up in our truck — not by the hour, and not by item count. The ranges above cover most jobs; call or text for a fast quote." },
+  { q: "Does the price include labor and disposal?", a: "Yes. Every quote includes our crew's labor, loading, hauling, and responsible disposal. There are no add-ons after the job is done." },
+  { q: "Are there any hidden fees?", a: "No. The price we quote is the price you pay — no fuel surcharges, no dumping fees, no surprise charges." },
+  { q: "Do I need to move the furniture before you arrive?", a: "No. Our crew handles all the lifting. Tell us where the pieces are and we take it from there." },
   { q: "Do you take broken or damaged furniture?", a: "Yes. Condition doesn't matter — broken frames, torn upholstery, old wood, whatever. We take it." },
-  { q: "What counties do you serve?", a: "Washington, Ozaukee, Fond du Lac, Sheboygan, and Waukesha counties. Your location within those counties affects your price." },
+  { q: "What counties do you serve?", a: "Washington, Ozaukee, Fond du Lac, Sheboygan, and Waukesha counties. Your location within those counties affects pricing." },
   { q: "Do you take commercial furniture?", a: "Yes. Office furniture, waiting room seating, restaurant furniture, cubicle systems — we handle commercial jobs." },
-  { q: "Can you pick up just one piece?", a: "Yes. We price by the job, so a single recliner or one dresser is a reasonable pickup." },
+  { q: "Can you pick up just one piece?", a: "Yes. Single-item pickups fall under our quarter-load minimum. Call or text and we'll confirm the price." },
 ];
 
 export default function Pricing() {
@@ -25,45 +55,56 @@ export default function Pricing() {
         <div className="max-w-4xl mx-auto">
           <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Pricing" }]} />
           <h1 className="text-4xl font-extrabold text-foreground mb-4">Pricing</h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">Pricing is based on your location and the volume of furniture being removed. Call or text for a fast quote — no in-person estimate needed for most jobs.</p>
+          <p className="text-muted-foreground text-lg max-w-2xl">
+            Transparent, volume-based pricing with no hidden fees. Prices include labor and disposal.
+          </p>
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-14">
-        {/* Main pricing callout */}
-        <div className="bg-foreground text-white rounded p-8 mb-12 text-center">
-          <h2 className="text-2xl font-bold mb-3">Pricing Is Based On Volume</h2>
-          <p className="text-white/75 max-w-xl mx-auto leading-relaxed mb-6">We don't use a flat-rate price sheet. Every quote is based on the volume of furniture being removed and includes labor and disposal — so you pay a fair price for your specific situation, not a padded estimate built for worst-case scenarios.</p>
-          <a href="tel:2626990100" className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold px-6 py-3 rounded hover:bg-primary/90 transition-colors">
-            <Phone className="w-4 h-4" />Call or Text for a Quote: 262-699-0100
-          </a>
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-14">
+
+        {/* How We Price */}
+        <div className="text-center mb-4">
+          <h2 className="text-2xl font-bold text-foreground mb-3">How We Price</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            We charge by load size — the amount of space your furniture occupies in our 7×16×4 trailer. You only pay for what we actually haul. All prices include labor and disposal.
+          </p>
         </div>
 
-        {/* Factors */}
-        <h2 className="text-xl font-bold text-foreground mb-5">What Affects Your Price</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12">
-            {[
-            { icon: MapPin, t: "Your Location", d: "We price based on travel from West Bend. Communities closer to us cost less; farther locations reflect the extra drive." },
-            { icon: CheckCircle2, t: "Volume of Furniture", d: "A single chair is different from a full living room set. The amount of space your items take up is the main factor in pricing." },
-            { icon: Phone, t: "Labor & Disposal Included", d: "Our quote includes labor, hauling, and disposal — no surprise add-ons after the job is done." },
-          ].map((f) => (
-            <div key={f.t} className="bg-white border border-border rounded p-6 shadow-sm">
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-9 h-9 bg-primary/10 rounded flex items-center justify-center">
-                  <f.icon className="w-5 h-5 text-primary" />
-                </div>
-                <h3 className="font-bold text-foreground">{f.t}</h3>
-              </div>
-              <p className="text-sm text-muted-foreground leading-relaxed">{f.d}</p>
+        {/* Pricing Tiers */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10 mb-14">
+          {tiers.map((tier) => (
+            <div
+              key={tier.name}
+              className={`rounded border p-6 flex flex-col ${
+                tier.highlighted
+                  ? "border-primary bg-primary/5 shadow-md"
+                  : "border-border bg-white shadow-sm"
+              }`}
+            >
+              {tier.highlighted && (
+                <span className="text-xs font-semibold text-primary uppercase tracking-wide mb-3">Most Common</span>
+              )}
+              <h3 className="text-lg font-bold text-foreground mb-1">{tier.name}</h3>
+              <p className="text-2xl font-extrabold text-primary mb-3">{tier.price}</p>
+              <p className="text-sm text-muted-foreground mb-5 leading-relaxed flex-1">{tier.description}</p>
+              <ul className="space-y-2">
+                {tier.examples.map((ex) => (
+                  <li key={ex} className="flex items-center gap-2 text-sm text-foreground/80">
+                    <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0" />
+                    {ex}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
 
-        {/* Always included */}
-        <div className="bg-muted/40 border border-border rounded p-6 mb-12">
-          <h2 className="text-lg font-bold text-foreground mb-4">Always Included</h2>
-          <div className="flex flex-wrap gap-3">
-            {["Lifting & loading by our crew", "Labor included", "Responsible disposal", "Licensed & insured service", "Price confirmed before we start", "On-time scheduling"].map((item) => (
+        {/* Always Included */}
+        <div className="bg-muted/40 border border-border rounded p-6 mb-14 text-center">
+          <p className="text-foreground font-semibold text-lg mb-4">Every job includes:</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {["Labor & loading by our crew", "Responsible disposal", "Licensed & insured service", "Price confirmed before we start", "On-time scheduling"].map((item) => (
               <span key={item} className="flex items-center gap-1.5 text-sm text-foreground/80 bg-white border border-border rounded-full px-4 py-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-primary flex-shrink-0" />{item}
               </span>
@@ -72,8 +113,8 @@ export default function Pricing() {
         </div>
 
         {/* FAQ */}
-        <div className="mb-12">
-          <h2 className="text-2xl font-bold text-foreground mb-6 flex items-center gap-2">
+        <div className="mb-14">
+          <h2 className="text-2xl font-bold text-foreground mb-8 flex items-center gap-2">
             <HelpCircle className="w-6 h-6 text-primary" />Frequently Asked Questions
           </h2>
           <div className="space-y-4">
@@ -87,8 +128,8 @@ export default function Pricing() {
         </div>
 
         <div className="bg-accent/40 border border-accent rounded p-8 text-center">
-          <h2 className="text-2xl font-bold text-foreground mb-3">Get Your Quote Now</h2>
-          <p className="text-muted-foreground mb-6 max-w-md mx-auto">Tell us your city and what you need removed. We'll give you a price right away.</p>
+          <h2 className="text-2xl font-bold text-foreground mb-3">Not Sure Which Tier Fits?</h2>
+          <p className="text-muted-foreground mb-6 max-w-md mx-auto">Call or text us — we'll talk through it and give you a number right away.</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="tel:2626990100" className="flex items-center gap-2 bg-primary text-primary-foreground font-bold px-6 py-3 rounded hover:bg-primary/90 transition-colors">
               <Phone className="w-4 h-4" />Call or Text 262-699-0100
