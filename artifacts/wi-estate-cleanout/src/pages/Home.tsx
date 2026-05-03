@@ -6,7 +6,6 @@ import {
   Heart,
   ShieldCheck,
   MapPin,
-  Star,
   ArrowRight,
   Trash2,
   Home as HomeIcon,
@@ -31,24 +30,6 @@ const values = [
   { icon: Recycle, title: "Recycle What We Can", desc: "Metals, electronics, and more are recycled responsibly — not just tossed in a dumpster." },
   { icon: ShieldCheck, title: "Licensed & Insured", desc: "Licensed for solid waste removal in Wisconsin. Fully insured for your peace of mind." },
   { icon: MapPin, title: "Locally Owned", desc: "Based right here in West Bend, WI. We're your neighbors, not a national franchise." },
-];
-
-const testimonials = [
-  {
-    name: "Karen M.",
-    location: "West Bend, WI",
-    text: "They were incredibly respectful during a very difficult time for our family. The crew worked quickly, kept us informed, and donated so much more than I expected. Couldn't recommend them more.",
-  },
-  {
-    name: "Tom R.",
-    location: "Cedarburg, WI",
-    text: "Called on a Tuesday, they were there Thursday. Fair pricing, honest crew, and they even told us which items they'd be donating. That attention to detail meant a lot.",
-  },
-  {
-    name: "Lisa P.",
-    location: "Waukesha, WI",
-    text: "Cleared out my parents' house in one day. They were thorough, professional, and clearly cared about doing things right. I'll be referring them to everyone I know.",
-  },
 ];
 
 export default function Home() {
@@ -209,35 +190,6 @@ export default function Home() {
             <Link href="/service-areas" data-testid="view-all-areas-link" className="text-primary font-semibold hover:underline text-sm">
               View all service areas &rarr;
             </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-16 px-4 bg-muted/30 border-y border-border">
-        <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-foreground mb-3">What Our Customers Say</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {testimonials.map((t, i) => (
-              <div
-                key={i}
-                data-testid={`testimonial-${i}`}
-                className="bg-white border border-border rounded-xl p-6 shadow-sm"
-              >
-                <div className="flex mb-3">
-                  {[...Array(5)].map((_, j) => (
-                    <Star key={j} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-                <p className="text-sm text-foreground/80 leading-relaxed mb-4 italic">"{t.text}"</p>
-                <div>
-                  <p className="font-semibold text-sm text-foreground">{t.name}</p>
-                  <p className="text-xs text-muted-foreground">{t.location}</p>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>

@@ -8,22 +8,22 @@ import Breadcrumb from "@/components/Breadcrumb";
 const tiers = [
   {
     name: "Small Load",
-    range: "$125 – $200",
-    description: "A few items — a couple pieces of furniture, several bags of debris, or a small pile of miscellaneous junk.",
-    examples: ["1–2 pieces of furniture", "A few appliances", "Small room cleanout", "Miscellaneous bags of junk"],
+    range: "$250",
+    description: "Up to roughly a quarter of our trailer — a few items, a couple pieces of furniture, or a small room's worth of junk.",
+    examples: ["1–3 pieces of furniture", "A few appliances", "Small room cleanout", "Miscellaneous bags of junk"],
   },
   {
     name: "Half Load",
-    range: "$250 – $375",
-    description: "Roughly half a truck — a garage's worth of items, a basement, or several rooms of accumulated belongings.",
+    range: "$400",
+    description: "Approximately half our 7×16×4 trailer — a full garage, a basement, or several rooms of accumulated belongings.",
     examples: ["Full garage cleanout", "Basement cleanout", "3–4 rooms of furniture", "Estate partial clearance"],
     highlighted: true,
   },
   {
     name: "Full Load",
-    range: "$400 – $600+",
-    description: "A full truck load — complete estate cleanouts, whole-home clearances, or large hoarding situations.",
-    examples: ["Full estate cleanout", "Whole-home clearance", "Large hoarding cleanup", "Commercial property cleanout"],
+    range: "$750",
+    description: "A completely full 7×16×4 trailer — the right choice for whole-home estate cleanouts, large hoarding situations, and full property clearances.",
+    examples: ["Full estate cleanout", "Whole-home clearance", "Large hoarding cleanup", "Full property clearance"],
   },
 ];
 

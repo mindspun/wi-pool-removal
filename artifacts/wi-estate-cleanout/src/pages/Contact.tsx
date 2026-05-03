@@ -29,7 +29,7 @@ export default function Contact() {
                 Use our online request form to describe your job and schedule a time that works for you. We'll follow up quickly to confirm details and provide your free estimate.
               </p>
               <a
-                href="https://clienthub.getjobber.com/client_hubs/placeholder"
+                href="https://clienthub.getjobber.com/hubs/70ad09c0-29e5-4b3f-b648-6642ff3dff80/public/requests/4351309/new"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="jobber-request-link"
