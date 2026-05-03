@@ -25,15 +25,15 @@ export default function Pricing() {
         <div className="max-w-4xl mx-auto">
           <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Pricing" }]} />
           <h1 className="text-4xl font-extrabold text-foreground mb-4">Pricing</h1>
-          <p className="text-muted-foreground text-lg max-w-2xl">Pricing is based on your location and the items being removed. Call or text for a fast quote — no in-person estimate needed for most jobs.</p>
+          <p className="text-muted-foreground text-lg max-w-2xl">Pricing is based on your location and the volume of furniture being removed. Call or text for a fast quote — no in-person estimate needed for most jobs.</p>
         </div>
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-14">
         {/* Main pricing callout */}
         <div className="bg-foreground text-white rounded p-8 mb-12 text-center">
-          <h2 className="text-2xl font-bold mb-3">Pricing Is Based On Your Job</h2>
-          <p className="text-white/75 max-w-xl mx-auto leading-relaxed mb-6">We don't use a flat-rate price sheet. Every quote accounts for your location and exactly what needs to be removed — so you pay a fair price for your specific situation, not a padded estimate built for worst-case scenarios.</p>
+          <h2 className="text-2xl font-bold mb-3">Pricing Is Based On Volume</h2>
+          <p className="text-white/75 max-w-xl mx-auto leading-relaxed mb-6">We don't use a flat-rate price sheet. Every quote is based on the volume of furniture being removed and includes labor and disposal — so you pay a fair price for your specific situation, not a padded estimate built for worst-case scenarios.</p>
           <a href="tel:2626990100" className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-bold px-6 py-3 rounded hover:bg-primary/90 transition-colors">
             <Phone className="w-4 h-4" />Call or Text for a Quote: 262-699-0100
           </a>
@@ -42,10 +42,10 @@ export default function Pricing() {
         {/* Factors */}
         <h2 className="text-xl font-bold text-foreground mb-5">What Affects Your Price</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-12">
-          {[
+            {[
             { icon: MapPin, t: "Your Location", d: "We price based on travel from West Bend. Communities closer to us cost less; farther locations reflect the extra drive." },
-            { icon: CheckCircle2, t: "Items Being Removed", d: "A single chair is different from a full living room set. The number, size, and type of items all factor in." },
-            { icon: Phone, t: "Quick Quote by Phone", d: "Tell us your city and what needs to go — we'll give you a price right away, no waiting." },
+            { icon: CheckCircle2, t: "Volume of Furniture", d: "A single chair is different from a full living room set. The amount of space your items take up is the main factor in pricing." },
+            { icon: Phone, t: "Labor & Disposal Included", d: "Our quote includes labor, hauling, and disposal — no surprise add-ons after the job is done." },
           ].map((f) => (
             <div key={f.t} className="bg-white border border-border rounded p-6 shadow-sm">
               <div className="flex items-center gap-3 mb-3">
@@ -63,7 +63,7 @@ export default function Pricing() {
         <div className="bg-muted/40 border border-border rounded p-6 mb-12">
           <h2 className="text-lg font-bold text-foreground mb-4">Always Included</h2>
           <div className="flex flex-wrap gap-3">
-            {["Lifting & loading by our crew", "Responsible disposal", "Licensed & insured service", "Price confirmed before we start", "On-time scheduling"].map((item) => (
+            {["Lifting & loading by our crew", "Labor included", "Responsible disposal", "Licensed & insured service", "Price confirmed before we start", "On-time scheduling"].map((item) => (
               <span key={item} className="flex items-center gap-1.5 text-sm text-foreground/80 bg-white border border-border rounded-full px-4 py-1.5">
                 <CheckCircle2 className="w-3.5 h-3.5 text-primary flex-shrink-0" />{item}
               </span>
