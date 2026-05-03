@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/wi-appliance-disposal/"
+title = "WI Appliance Disposal"
+version = "1.0.0"
+id = "artifacts/wi-appliance-disposal"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/wi-appliance-disposal/" ]
+localPort = 25734
+
+[services.development]
+run = "pnpm --filter @workspace/wi-appliance-disposal run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/wi-appliance-disposal", "run", "build" ]
+publicDir = "artifacts/wi-appliance-disposal/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25734"
+BASE_PATH = "/wi-appliance-disposal/"
