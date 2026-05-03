@@ -6,3 +6,9 @@ id = "arc_kGMIYF29Wg532JZPl"
 uri = "file://wi-estate-cleanout-site.zip"
 type = "unspecified"
 title = "WI Estate Cleanout — Static Site"
+
+[[outputs]]
+id = "ZQpnVPUecJ2J8w8z9tXI1"
+uri = "file://wi-appliance-disposal-site.zip"
+type = "unspecified"
+title = "WI Appliance Disposal — Static Site"
