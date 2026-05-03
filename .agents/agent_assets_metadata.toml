@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "arc_kGMIYF29Wg532JZPl"
+uri = "file://wi-estate-cleanout-site.zip"
+type = "unspecified"
+title = "WI Estate Cleanout — Static Site"
