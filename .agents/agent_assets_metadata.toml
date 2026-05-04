@@ -12,3 +12,15 @@ id = "ZQpnVPUecJ2J8w8z9tXI1"
 uri = "file://wi-appliance-disposal-site.zip"
 type = "unspecified"
 title = "WI Appliance Disposal — Static Site"
+
+[[outputs]]
+id = "4stTk16GVHVr59ggFxlmw"
+uri = "file://artifacts/wi-furniture-disposal/wi-furniture-disposal-full-site.zip"
+type = "unspecified"
+title = "WI Furniture Disposal — Full Site"
+
+[[outputs]]
+id = "QOiX2GfbbRVDQ-Dh-A4Si"
+uri = "file://artifacts/wi-mattress-disposal/wi-mattress-disposal-full-site.zip"
+type = "unspecified"
+title = "WI Mattress Disposal — Full Site"
