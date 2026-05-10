@@ -1,0 +1,57 @@
+kind = "web"
+previewPath = "/jgestates-com/"
+title = "JG Estates"
+version = "1.0.0"
+id = "artifacts/jgestates-com"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/jgestates-com/" ]
+localPort = 18856
+
+[services.development]
+run = "pnpm --filter @workspace/jgestates-com run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/jgestates-com", "run", "build" ]
+publicDir = "artifacts/jgestates-com/dist/public"
+serve = "static"
+
+# Specific extensionless-URL rewrites — .html files are served directly by the
+# static server without hitting these rules. Rules only fire for extensionless paths.
+[[services.production.rewrites]]
+from = "/"
+to = "/home.html"
+
+[[services.production.rewrites]]
+from = "/pricing"
+to = "/pricing.html"
+
+[[services.production.rewrites]]
+from = "/about-us"
+to = "/about-us.html"
+
+[[services.production.rewrites]]
+from = "/faq"
+to = "/faq.html"
+
+[[services.production.rewrites]]
+from = "/contact"
+to = "/contact.html"
+
+[[services.production.rewrites]]
+from = "/legal/terms-and-conditions"
+to = "/terms-and-conditions.html"
+
+[[services.production.rewrites]]
+from = "/legal/privacy-policy"
+to = "/privacy-policy.html"
+
+[services.env]
+PORT = "18856"
+BASE_PATH = "/jgestates-com/"
