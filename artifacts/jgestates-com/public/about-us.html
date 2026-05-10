@@ -1048,6 +1048,25 @@ var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false
 //# sourceURL=elementor-frontend-js-before
 /* ]]> */
 </script>
+<script>
+/* Elementor compatibility shim — prevents ReferenceErrors from WP/Elementor scripts */
+(function() {
+  var noop = function() { return null; };
+  var Fragment = { displayName: 'Fragment' };
+  if (!window.React) {
+    window.React = { createElement: noop, Component: function(){}, Fragment: Fragment, createContext: function(){ return { Provider: noop, Consumer: noop }; }, forwardRef: noop, memo: noop, useEffect: noop, useState: function(v){ return [v, noop]; }, useRef: function(){ return { current: null }; }, useCallback: noop, useMemo: noop, Children: { map: noop, forEach: noop }, version: '18.2.0' };
+  }
+  if (!window.ReactDOM) {
+    window.ReactDOM = { createRoot: function() { return { render: noop, unmount: noop }; }, render: noop };
+  }
+  window.wp = window.wp || {};
+  window.wp.element = window.wp.element || window.React;
+  /* Stub ElementorProFrontendConfig so webpack-pro.runtime.min.js doesn't crash before the real config loads */
+  if (!window.ElementorProFrontendConfig) {
+    window.ElementorProFrontendConfig = { ajaxurl: '', nonce: '', urls: { assets: 'assets/', rest: '' }, settings: { lazy_load_background_images: false }, popup: { hasPopUps: false }, shareButtonsNetworks: {}, facebook_sdk: { lang: 'en_US', app_id: '' }, lottie: { defaultAnimationUrl: '' } };
+  }
+})();
+</script>
 <script type="text/javascript" src="assets/js/frontend.min.js" id="elementor-frontend-js"></script>
 <script type="text/javascript" id="rocket-browser-checker-js-after">
 /* <![CDATA[ */
