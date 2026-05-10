@@ -35,7 +35,7 @@ See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and pa
 - **Pages**: Home, About, Pricing, Contact, Service Areas overview, 5 county pages, 25 city pages
 - **Counties served**: Washington, Ozaukee, Fond du Lac, Sheboygan, Waukesha
 - **Phone**: 262-699-0100
-- **Contact form**: Links to Jobber (https://clienthub.getjobber.com/client_hubs/placeholder — update with real URL)
+- **Contact form**: Links to Jobber request form — `https://clienthub.getjobber.com/hubs/70ad09c0-29e5-4b3f-b648-6642ff3dff80/public/requests/4351309/new`
 - **Key files**:
   - `src/data/serviceAreas.ts` — all county/city data in one place
   - `src/components/Layout.tsx` — shared header/footer
