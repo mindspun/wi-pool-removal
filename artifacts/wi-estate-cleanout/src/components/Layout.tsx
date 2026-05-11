@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
-import { Phone, Menu, X, Truck } from "lucide-react";
+import { Phone, Menu, X, Truck, Calendar } from "lucide-react";
+
+const JOBBER_URL =
+  "https://clienthub.getjobber.com/hubs/70ad09c0-29e5-4b3f-b648-6642ff3dff80/public/requests/4351309/new";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -55,6 +58,16 @@ function Header() {
               <Phone className="w-4 h-4" />
               262-699-0100
             </a>
+            <a
+              href={JOBBER_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="link-schedule-pickup-header"
+              className="hidden md:flex items-center gap-1.5 bg-green-600 text-white px-3 py-2 rounded-lg text-sm font-semibold hover:bg-green-700 transition-colors"
+            >
+              <Calendar className="w-4 h-4" />
+              Schedule Pickup
+            </a>
             <button
               className="md:hidden p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
               onClick={() => setOpen(!open)}
@@ -90,6 +103,16 @@ function Header() {
             >
               <Phone className="w-4 h-4" />
               262-699-0100
+            </a>
+            <a
+              href={JOBBER_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="link-schedule-pickup-mobile"
+              className="flex items-center gap-1.5 mx-3 mt-2 px-3 py-2.5 bg-green-600 text-white rounded-lg text-sm font-semibold hover:bg-green-700 transition-colors justify-center"
+            >
+              <Calendar className="w-4 h-4" />
+              Schedule Pickup
             </a>
           </div>
         )}
