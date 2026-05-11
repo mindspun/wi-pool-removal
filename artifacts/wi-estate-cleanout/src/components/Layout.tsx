@@ -136,14 +136,26 @@ function Footer() {
             <p className="text-sm text-white/70 leading-relaxed">
               Locally owned and operated in West Bend, WI. Licensed for solid waste removal. Insured. We donate and recycle as much as possible — your cleanout should do right by the community.
             </p>
-            <a
-              href="tel:2626990100"
-              data-testid="link-phone-footer"
-              className="inline-flex items-center gap-1.5 mt-4 text-primary font-semibold text-sm hover:text-primary/80 transition-colors"
-            >
-              <Phone className="w-4 h-4" />
-              262-699-0100
-            </a>
+            <div className="flex flex-wrap items-center gap-3 mt-4">
+              <a
+                href="tel:2626990100"
+                data-testid="link-phone-footer"
+                className="inline-flex items-center gap-1.5 text-primary font-semibold text-sm hover:text-primary/80 transition-colors"
+              >
+                <Phone className="w-4 h-4" />
+                262-699-0100
+              </a>
+              <a
+                href={JOBBER_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="link-schedule-pickup-footer"
+                className="inline-flex items-center gap-1.5 bg-green-600 text-white px-3 py-2 rounded-lg text-sm font-semibold hover:bg-green-700 transition-colors"
+              >
+                <Calendar className="w-4 h-4" />
+                Schedule Pickup
+              </a>
+            </div>
           </div>
 
           <div>
