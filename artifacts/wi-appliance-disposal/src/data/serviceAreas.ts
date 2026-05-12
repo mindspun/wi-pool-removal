@@ -48,6 +48,48 @@ export const counties: County[] = [
         blurb:
           "Jackson homeowners call us when they need appliances hauled away the right way. We're licensed, insured, and based nearby — so when you need it gone, we're ready to go.",
       },
+      {
+        name: "Kewaskum",
+        slug: "kewaskum",
+        blurb:
+          "Kewaskum residents count on us for straightforward appliance pickup. Refrigerators, washers, dryers, stoves — we haul it all out safely and responsibly, with pricing confirmed before we schedule.",
+      },
+      {
+        name: "Richfield",
+        slug: "richfield",
+        blurb:
+          "Richfield homeowners call us when appliances need to go. We serve rural and residential properties throughout the area with licensed, insured appliance disposal at fair, upfront prices.",
+      },
+      {
+        name: "Barton",
+        slug: "barton",
+        blurb:
+          "Barton residents have a local option for appliance removal that's fast and fairly priced. We cover this area regularly and are ready to pick up whatever you need gone — refrigerators, washers, dryers, and more.",
+      },
+      {
+        name: "Newburg",
+        slug: "newburg",
+        blurb:
+          "Newburg homeowners trust us for reliable appliance pickup. One unit or several — we price the job upfront and haul everything out promptly and responsibly.",
+      },
+      {
+        name: "Allenton",
+        slug: "allenton",
+        blurb:
+          "Allenton residents have a reliable local option for appliance removal. We cover the area regularly and make the process as easy as a phone call — fair pricing, responsible disposal.",
+      },
+      {
+        name: "Erin",
+        slug: "erin",
+        blurb:
+          "Erin homeowners call us for appliance removal at rural and residential properties. We're licensed, insured, and priced by the job — ready to schedule around your availability.",
+      },
+      {
+        name: "Addison",
+        slug: "addison",
+        blurb:
+          "Addison homeowners and property owners call us for reliable appliance pickup. We serve the area regularly and handle all makes, models, and conditions — pricing confirmed before we arrive.",
+      },
     ],
   },
   {
@@ -85,6 +127,30 @@ export const counties: County[] = [
         slug: "thiensville",
         blurb:
           "Thiensville residents call us for honest, no-fuss appliance disposal. We're locally owned, nearby, and committed to handling every pickup in a way that's responsible to the environment and respectful of your property.",
+      },
+      {
+        name: "Saukville",
+        slug: "saukville",
+        blurb:
+          "Saukville residents call us for no-nonsense appliance disposal. We serve this area regularly with honest pricing and reliable scheduling — ready to haul out whatever you need gone.",
+      },
+      {
+        name: "Fredonia",
+        slug: "fredonia",
+        blurb:
+          "Fredonia homeowners and businesses call us for fast, fair appliance removal. We take all types and sizes and price every job before we schedule.",
+      },
+      {
+        name: "Belgium",
+        slug: "belgium",
+        blurb:
+          "Belgium residents trust us for prompt, responsible appliance pickup. We cover this area and are ready to haul out refrigerators, washers, dryers, and more at fair, upfront prices.",
+      },
+      {
+        name: "River Hills",
+        slug: "river-hills",
+        blurb:
+          "River Hills homeowners call us for efficient appliance removal from homes of all sizes. We're licensed, insured, and always upfront about what the job will cost before we put it on the schedule.",
       },
     ],
   },
@@ -124,6 +190,48 @@ export const counties: County[] = [
         blurb:
           "Campbellsport residents have a local, reliable option for appliance removal. We're licensed for solid waste and fully insured — ready to pick up whatever you need gone and handle disposal the right way.",
       },
+      {
+        name: "North Fond du Lac",
+        slug: "north-fond-du-lac",
+        blurb:
+          "North Fond du Lac homeowners call us for reliable appliance pickup. We serve the village regularly with the same licensed, insured, fairly priced service we bring throughout Fond du Lac County.",
+      },
+      {
+        name: "Lomira",
+        slug: "lomira",
+        blurb:
+          "Lomira homeowners have a reliable appliance removal option. We cover this part of Fond du Lac County regularly and are ready to pick up whatever you need hauled away at fair, upfront prices.",
+      },
+      {
+        name: "Oakfield",
+        slug: "oakfield",
+        blurb:
+          "Oakfield residents call us for appliance disposal that's straightforward and fairly priced. We serve the area with licensed, insured pickup for all household and commercial appliances.",
+      },
+      {
+        name: "Rosendale",
+        slug: "rosendale",
+        blurb:
+          "Rosendale residents have a reliable local option for appliance removal. We serve the area with fair, upfront pricing and responsible disposal — ready to schedule around your availability.",
+      },
+      {
+        name: "Brandon",
+        slug: "brandon",
+        blurb:
+          "Brandon homeowners call us for reliable appliance pickup. We serve this part of Fond du Lac County with the same honest, professional service we bring everywhere in our coverage area.",
+      },
+      {
+        name: "Eden",
+        slug: "eden",
+        blurb:
+          "Eden residents have a dependable option for appliance removal. We cover this part of Fond du Lac County with licensed, insured service and honest pricing on every job.",
+      },
+      {
+        name: "Brownsville",
+        slug: "brownsville",
+        blurb:
+          "Brownsville residents have a reliable appliance disposal option. We cover the area with licensed, insured service and always price the job before we schedule.",
+      },
     ],
   },
   {
@@ -162,6 +270,48 @@ export const counties: County[] = [
         blurb:
           "Elkhart Lake seasonal and permanent residents call us for appliance removal at both vacation properties and year-round homes. We're flexible, reliable, and always upfront about cost before we do any work.",
       },
+      {
+        name: "Oostburg",
+        slug: "oostburg",
+        blurb:
+          "Oostburg homeowners and businesses trust us for prompt appliance removal. We cover this part of Sheboygan County regularly with honest pricing and responsible disposal on every pickup.",
+      },
+      {
+        name: "Random Lake",
+        slug: "random-lake",
+        blurb:
+          "Random Lake residents have a reliable option for appliance pickup. We cover this area regularly with licensed, insured service and always price the job before we schedule.",
+      },
+      {
+        name: "Cedar Grove",
+        slug: "cedar-grove",
+        blurb:
+          "Cedar Grove homeowners call us for straightforward appliance disposal. We serve the area regularly with fair, upfront pricing and responsible handling of every appliance we haul away.",
+      },
+      {
+        name: "Kiel",
+        slug: "kiel",
+        blurb:
+          "Kiel homeowners and businesses rely on us for no-fuss appliance removal. Licensed, insured, fairly priced — and always transparent about cost before we start any job.",
+      },
+      {
+        name: "Howards Grove",
+        slug: "howards-grove",
+        blurb:
+          "Howards Grove residents have a dependable local option for appliance pickup. We serve the community with honest pricing and reliable scheduling for all appliance types and sizes.",
+      },
+      {
+        name: "Waldo",
+        slug: "waldo",
+        blurb:
+          "Waldo homeowners call us for appliance removal that's simple and fairly priced. We cover this part of Sheboygan County with licensed, insured service and upfront pricing on every job.",
+      },
+      {
+        name: "Cascade",
+        slug: "cascade",
+        blurb:
+          "Cascade residents have a reliable appliance disposal option. We serve this area of Sheboygan County with upfront pricing and responsible handling every time we're called out.",
+      },
     ],
   },
   {
@@ -199,6 +349,60 @@ export const counties: County[] = [
         slug: "menomonee-falls",
         blurb:
           "Menomonee Falls is one of Waukesha County's largest communities and we're well-prepared to serve it. From single unit removal to full commercial appliance clearouts, we bring the same professional, fairly priced service every time.",
+      },
+      {
+        name: "New Berlin",
+        slug: "new-berlin",
+        blurb:
+          "New Berlin homeowners and businesses trust us for appliance removal at any scale. We serve this busy community with fast scheduling, honest pricing, and responsible disposal of every appliance we haul.",
+      },
+      {
+        name: "Muskego",
+        slug: "muskego",
+        blurb:
+          "Muskego homeowners call us for efficient, fairly priced appliance disposal. We handle single units and full-property clearouts with the same professional, on-time approach throughout the community.",
+      },
+      {
+        name: "Mukwonago",
+        slug: "mukwonago",
+        blurb:
+          "Mukwonago homeowners rely on us for dependable appliance removal. We serve the area with licensed, insured pickup and always quote the job before we schedule.",
+      },
+      {
+        name: "Sussex",
+        slug: "sussex",
+        blurb:
+          "Sussex homeowners and businesses call us for prompt, reliable appliance disposal. We cover this part of Waukesha County regularly with fair pricing and responsible handling on every job.",
+      },
+      {
+        name: "Delafield",
+        slug: "delafield",
+        blurb:
+          "Delafield homeowners call us for appliance removal that's efficient and transparent. We cover this part of Waukesha County with licensed, insured service and upfront pricing on every pickup.",
+      },
+      {
+        name: "Wales",
+        slug: "wales",
+        blurb:
+          "Wales homeowners call us for appliance disposal that's straightforward and fairly priced. We cover this area regularly and are ready to schedule around your availability.",
+      },
+      {
+        name: "Hartland",
+        slug: "hartland",
+        blurb:
+          "Hartland homeowners and businesses rely on us for fast, fair appliance removal. We cover the area with licensed, insured service and price every job upfront before we arrive.",
+      },
+      {
+        name: "Elm Grove",
+        slug: "elm-grove",
+        blurb:
+          "Elm Grove homeowners call us for efficient, responsibly handled appliance removal. We serve this Waukesha County community with licensed, insured pickup and upfront pricing on every job.",
+      },
+      {
+        name: "Dousman",
+        slug: "dousman",
+        blurb:
+          "Dousman residents have a reliable local option for appliance disposal. We cover the area with licensed, insured service and always price the job before we put it on the schedule.",
       },
     ],
   },
