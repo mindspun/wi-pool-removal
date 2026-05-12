@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
-import { Phone, Menu, X, Sofa } from "lucide-react";
+import { Phone, Menu, X, Sofa, Calendar } from "lucide-react";
+
+const JOBBER_URL =
+  "https://clienthub.getjobber.com/hubs/70ad09c0-29e5-4b3f-b648-6642ff3dff80/public/requests/4351309/new";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -51,6 +54,15 @@ function Header() {
               <Phone className="w-4 h-4" />
               262-699-0100
             </a>
+            <a
+              href={JOBBER_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden md:flex items-center gap-1.5 bg-green-600 text-white px-3 py-2 rounded text-sm font-bold hover:bg-green-700 transition-colors"
+            >
+              <Calendar className="w-4 h-4" />
+              Schedule Pickup
+            </a>
             <button
               className="md:hidden p-2 rounded text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
               onClick={() => setOpen(!open)}
@@ -78,6 +90,15 @@ function Header() {
             <a href="tel:2626990100" className="flex items-center gap-1.5 px-3 py-2 text-sm font-bold text-primary">
               <Phone className="w-4 h-4" />262-699-0100
             </a>
+            <a
+              href={JOBBER_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 mx-3 mt-2 px-3 py-2.5 bg-green-600 text-white rounded text-sm font-bold hover:bg-green-700 transition-colors justify-center"
+            >
+              <Calendar className="w-4 h-4" />
+              Schedule Pickup
+            </a>
           </div>
         )}
       </div>
@@ -100,9 +121,20 @@ function Footer() {
             <p className="text-sm text-white/65 leading-relaxed">
               Locally owned in West Bend, WI. Licensed for solid waste removal. Fully insured. Household and commercial furniture pickup done right.
             </p>
-            <a href="tel:2626990100" className="inline-flex items-center gap-1.5 mt-4 text-primary font-semibold text-sm hover:text-primary/80 transition-colors">
-              <Phone className="w-4 h-4" />262-699-0100
-            </a>
+            <div className="flex flex-wrap items-center gap-3 mt-4">
+              <a href="tel:2626990100" className="inline-flex items-center gap-1.5 text-primary font-semibold text-sm hover:text-primary/80 transition-colors">
+                <Phone className="w-4 h-4" />262-699-0100
+              </a>
+              <a
+                href={JOBBER_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 bg-green-600 text-white px-3 py-2 rounded text-sm font-bold hover:bg-green-700 transition-colors"
+              >
+                <Calendar className="w-4 h-4" />
+                Schedule Pickup
+              </a>
+            </div>
           </div>
           <div>
             <h3 className="font-semibold text-white/50 mb-4 text-xs uppercase tracking-widest">Quick Links</h3>
