@@ -30,3 +30,9 @@ id = "7F48wjYhtInXchH9ySnhZ"
 uri = "file://jgestates-com.zip"
 type = "unspecified"
 title = "JG Estates — Site Files"
+
+[[outputs]]
+id = "1tg-lMgPUQ25tm690kcI3"
+uri = "file://jgestates-com-site.zip"
+type = "unspecified"
+title = "JG Estates – Site Files (HTML at root)"
