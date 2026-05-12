@@ -24,3 +24,9 @@ id = "QOiX2GfbbRVDQ-Dh-A4Si"
 uri = "file://artifacts/wi-mattress-disposal/wi-mattress-disposal-full-site.zip"
 type = "unspecified"
 title = "WI Mattress Disposal — Full Site"
+
+[[outputs]]
+id = "7F48wjYhtInXchH9ySnhZ"
+uri = "file://jgestates-com.zip"
+type = "unspecified"
+title = "JG Estates — Site Files"
