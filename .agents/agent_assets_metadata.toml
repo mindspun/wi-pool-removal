@@ -36,3 +36,9 @@ id = "1tg-lMgPUQ25tm690kcI3"
 uri = "file://jgestates-com-site.zip"
 type = "unspecified"
 title = "JG Estates – Full Site (72 pages, updated service areas)"
+
+[[outputs]]
+id = "bNn0WnSHW6pI4PhS58u_b"
+uri = "file://jgestates-com-site-v3.zip"
+type = "unspecified"
+title = "JG Estates Site v3 — Fixed layout + updated pricing (11.8 MB, 72 pages)"
