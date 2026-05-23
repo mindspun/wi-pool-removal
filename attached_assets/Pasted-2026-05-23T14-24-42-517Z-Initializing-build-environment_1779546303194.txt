@@ -1,0 +1,47 @@
+2026-05-23T14:24:42.517Z	Initializing build environment...
+2026-05-23T14:24:44.402Z	Success: Finished initializing build environment
+2026-05-23T14:24:44.822Z	Cloning repository...
+2026-05-23T14:24:46.664Z	No build output detected to cache. Skipping.
+2026-05-23T14:24:46.664Z	No dependencies detected to cache. Skipping.
+2026-05-23T14:24:46.667Z	Detected the following tools from environment: bun@1.2.15, nodejs@22.16.0
+2026-05-23T14:24:46.669Z	Installing project dependencies: bun install
+2026-05-23T14:24:46.795Z	bun install v1.2.15 (df017990)
+2026-05-23T14:24:46.812Z	Resolving dependencies
+2026-05-23T14:24:47.485Z	Resolved, downloaded and extracted [378]
+2026-05-23T14:24:47.838Z	Saved lockfile
+2026-05-23T14:24:47.838Z	
+2026-05-23T14:24:47.838Z	+ @types/node@25.9.1
+2026-05-23T14:24:47.838Z	+ @types/react@19.2.15
+2026-05-23T14:24:47.838Z	+ @types/react-dom@19.2.3
+2026-05-23T14:24:47.839Z	+ @vitejs/plugin-react@5.2.0 (v6.0.2 available)
+2026-05-23T14:24:47.839Z	+ react@19.1.0 (v19.2.6 available)
+2026-05-23T14:24:47.839Z	+ react-dom@19.1.0 (v19.2.6 available)
+2026-05-23T14:24:47.839Z	+ vite@7.3.3 (v8.0.14 available)
+2026-05-23T14:24:47.839Z	
+2026-05-23T14:24:47.839Z	70 packages installed [1060.00ms]
+2026-05-23T14:24:47.986Z	Executing user build command: npm run build
+2026-05-23T14:24:48.380Z	
+2026-05-23T14:24:48.380Z	> @workspace/jgestates-com@0.0.0 build
+2026-05-23T14:24:48.380Z	> vite build --config vite.config.ts
+2026-05-23T14:24:48.380Z	
+2026-05-23T14:24:48.605Z	▲ [WARNING] Cannot find base config file "../../tsconfig.base.json" [tsconfig.json]
+2026-05-23T14:24:48.605Z	
+2026-05-23T14:24:48.605Z	    tsconfig.json:2:13:
+2026-05-23T14:24:48.606Z	      2 │   "extends": "../../tsconfig.base.json",
+2026-05-23T14:24:48.606Z	        ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~
+2026-05-23T14:24:48.606Z	
+2026-05-23T14:24:48.688Z	vite v7.3.3 building client environment for production...
+2026-05-23T14:24:48.762Z	✓ 0 modules transformed.
+2026-05-23T14:24:48.766Z	✗ Build failed in 53ms
+2026-05-23T14:24:48.767Z	error during build:
+2026-05-23T14:24:48.767Z	[vite:build-html] failed to resolve "extends":"../../tsconfig.base.json" in /opt/buildhome/repo/tsconfig.json
+2026-05-23T14:24:48.767Z	file: /opt/buildhome/repo/index.html
+2026-05-23T14:24:48.767Z	    at resolveExtends (file:///opt/buildhome/repo/node_modules/vite/dist/node/chunks/config.js:5809:8)
+2026-05-23T14:24:48.767Z	    at parseExtends (file:///opt/buildhome/repo/node_modules/vite/dist/node/chunks/config.js:5775:71)
+2026-05-23T14:24:48.767Z	    at parse$13 (file:///opt/buildhome/repo/node_modules/vite/dist/node/chunks/config.js:5677:23)
+2026-05-23T14:24:48.767Z	    at async loadTsconfigJsonForFile (file:///opt/buildhome/repo/node_modules/vite/dist/node/chunks/config.js:6302:37)
+2026-05-23T14:24:48.768Z	    at async transformWithEsbuild (file:///opt/buildhome/repo/node_modules/vite/dist/node/chunks/config.js:6086:55)
+2026-05-23T14:24:48.768Z	    at async Object.transform (file:///opt/buildhome/repo/node_modules/vite/dist/node/chunks/config.js:6172:20)
+2026-05-23T14:24:48.768Z	    at async transform (file:///opt/buildhome/repo/node_modules/rollup/dist/es/shared/node-entry.js:21678:16)
+2026-05-23T14:24:48.768Z	    at async ModuleLoader.addModuleSource (file:///opt/buildhome/repo/node_modules/rollup/dist/es/shared/node-entry.js:21906:36)
+2026-05-23T14:24:48.798Z	Failed: error occurred while running build command
