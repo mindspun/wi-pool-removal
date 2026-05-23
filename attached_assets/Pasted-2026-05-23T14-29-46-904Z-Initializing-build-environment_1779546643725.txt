@@ -1,0 +1,126 @@
+2026-05-23T14:29:46.904Z	Initializing build environment...
+2026-05-23T14:29:49.519Z	Success: Finished initializing build environment
+2026-05-23T14:29:50.018Z	Cloning repository...
+2026-05-23T14:29:52.404Z	No build output detected to cache. Skipping.
+2026-05-23T14:29:52.404Z	No dependencies detected to cache. Skipping.
+2026-05-23T14:29:52.411Z	Detected the following tools from environment: bun@1.2.15, nodejs@22.16.0
+2026-05-23T14:29:52.413Z	Installing project dependencies: bun install
+2026-05-23T14:29:52.625Z	bun install v1.2.15 (df017990)
+2026-05-23T14:29:52.672Z	Resolving dependencies
+2026-05-23T14:29:53.481Z	Resolved, downloaded and extracted [378]
+2026-05-23T14:29:54.008Z	Saved lockfile
+2026-05-23T14:29:54.013Z	
+2026-05-23T14:29:54.014Z	+ @types/node@25.9.1
+2026-05-23T14:29:54.014Z	+ @types/react@19.2.15
+2026-05-23T14:29:54.014Z	+ @types/react-dom@19.2.3
+2026-05-23T14:29:54.014Z	+ @vitejs/plugin-react@5.2.0 (v6.0.2 available)
+2026-05-23T14:29:54.014Z	+ react@19.1.0 (v19.2.6 available)
+2026-05-23T14:29:54.014Z	+ react-dom@19.1.0 (v19.2.6 available)
+2026-05-23T14:29:54.014Z	+ vite@7.3.3 (v8.0.14 available)
+2026-05-23T14:29:54.014Z	
+2026-05-23T14:29:54.014Z	70 packages installed [1438.00ms]
+2026-05-23T14:29:54.138Z	Executing user build command: npm run build
+2026-05-23T14:29:54.546Z	
+2026-05-23T14:29:54.546Z	> @workspace/jgestates-com@0.0.0 build
+2026-05-23T14:29:54.546Z	> vite build --config vite.config.ts
+2026-05-23T14:29:54.546Z	
+2026-05-23T14:29:54.905Z	vite v7.3.3 building client environment for production...
+2026-05-23T14:29:55.012Z	transforming...
+2026-05-23T14:29:56.311Z	✓ 29 modules transformed.
+2026-05-23T14:29:56.619Z	rendering chunks...
+2026-05-23T14:29:56.626Z	computing gzip size...
+2026-05-23T14:29:56.640Z	dist/public/index.html                   1.10 kB │ gzip:  0.46 kB
+2026-05-23T14:29:56.640Z	dist/public/assets/icon-CdN-pY_l.webp    1.30 kB
+2026-05-23T14:29:56.640Z	dist/public/assets/index-TZrNw7dA.css    0.02 kB │ gzip:  0.04 kB
+2026-05-23T14:29:56.640Z	dist/public/assets/index-DSrLTYcl.js   190.80 kB │ gzip: 59.84 kB
+2026-05-23T14:29:56.640Z	✓ built in 1.70s
+2026-05-23T14:29:56.689Z	Success: Build command completed
+2026-05-23T14:29:56.932Z	Executing user deploy command: npx wrangler deploy
+2026-05-23T14:29:58.457Z	npm warn exec The following package was not found and will be installed: wrangler@4.94.0
+2026-05-23T14:30:09.845Z	
+2026-05-23T14:30:09.846Z	 ⛅️ wrangler 4.94.0
+2026-05-23T14:30:09.846Z	───────────────────
+2026-05-23T14:30:09.869Z	
+2026-05-23T14:30:09.869Z	Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+2026-05-23T14:30:10.143Z	
+2026-05-23T14:30:10.148Z	Detected Project Settings:
+2026-05-23T14:30:10.149Z	 - Worker Name: jg-estate-services
+2026-05-23T14:30:10.150Z	 - Framework: Vite
+2026-05-23T14:30:10.150Z	 - Build Command: bun run build
+2026-05-23T14:30:10.150Z	 - Output Directory: dist
+2026-05-23T14:30:10.150Z	
+2026-05-23T14:30:10.150Z	? Do you want to modify these settings?
+2026-05-23T14:30:10.151Z	🤖 Using fallback value in non-interactive context: no
+2026-05-23T14:30:10.155Z	
+2026-05-23T14:30:10.155Z	📦 Install packages:
+2026-05-23T14:30:10.156Z	 - wrangler (devDependency)
+2026-05-23T14:30:10.156Z	
+2026-05-23T14:30:10.156Z	📝 Update package.json scripts:
+2026-05-23T14:30:10.156Z	 - "deploy": "bun run build && wrangler deploy"
+2026-05-23T14:30:10.156Z	 - "preview": "bun run build && wrangler dev"
+2026-05-23T14:30:10.156Z	
+2026-05-23T14:30:10.157Z	📄 Create wrangler.jsonc:
+2026-05-23T14:30:10.159Z	  {
+2026-05-23T14:30:10.159Z	    "$schema": "node_modules/wrangler/config-schema.json",
+2026-05-23T14:30:10.159Z	    "name": "jg-estate-services",
+2026-05-23T14:30:10.159Z	    "compatibility_date": "2026-05-23",
+2026-05-23T14:30:10.159Z	    "observability": {
+2026-05-23T14:30:10.159Z	      "enabled": true
+2026-05-23T14:30:10.160Z	    },
+2026-05-23T14:30:10.160Z	    "assets": {
+2026-05-23T14:30:10.160Z	      "not_found_handling": "single-page-application"
+2026-05-23T14:30:10.161Z	    },
+2026-05-23T14:30:10.161Z	    "compatibility_flags": [
+2026-05-23T14:30:10.166Z	      "nodejs_compat"
+2026-05-23T14:30:10.166Z	    ]
+2026-05-23T14:30:10.167Z	  }
+2026-05-23T14:30:10.167Z	
+2026-05-23T14:30:10.167Z	🛠️  Configuring project for Vite
+2026-05-23T14:30:10.168Z	
+2026-05-23T14:30:10.168Z	? Proceed with setup?
+2026-05-23T14:30:10.168Z	🤖 Using fallback value in non-interactive context: yes
+2026-05-23T14:30:13.908Z	├ Adding Wrangler files to the .gitignore file
+2026-05-23T14:30:13.909Z	│ created .gitignore file
+2026-05-23T14:30:13.910Z	│
+2026-05-23T14:30:13.910Z	[build] Running: bun run build
+2026-05-23T14:30:14.071Z	[build] $ vite build --config vite.config.ts
+2026-05-23T14:30:14.072Z	[build] 
+2026-05-23T14:30:16.025Z	[build] vite v7.3.3 building client environment for production...
+2026-05-23T14:30:16.026Z	[build] 
+2026-05-23T14:30:16.097Z	[build] transforming...
+2026-05-23T14:30:16.097Z	[build] 
+2026-05-23T14:30:17.253Z	[build] ✓ 29 modules transformed.
+2026-05-23T14:30:17.254Z	[build] 
+2026-05-23T14:30:17.707Z	[build] rendering chunks...
+2026-05-23T14:30:17.708Z	[build] 
+2026-05-23T14:30:17.718Z	[build] computing gzip size...
+2026-05-23T14:30:17.719Z	[build] 
+2026-05-23T14:30:17.729Z	[build] dist/public/.assetsignore                0.02 kB
+2026-05-23T14:30:17.730Z	[build] 
+2026-05-23T14:30:17.733Z	[build] dist/public/index.html                   1.10 kB │ gzip:  0.46 kB
+2026-05-23T14:30:17.733Z	[build] dist/public/wrangler.json                1.21 kB │ gzip:  0.61 kB
+2026-05-23T14:30:17.734Z	[build] dist/public/assets/icon-CdN-pY_l.webp    1.30 kB
+2026-05-23T14:30:17.734Z	[build] dist/public/assets/index-TZrNw7dA.css    0.02 kB │ gzip:  0.04 kB
+2026-05-23T14:30:17.734Z	[build] dist/public/assets/index-DSrLTYcl.js   190.80 kB │ gzip: 59.84 kB
+2026-05-23T14:30:17.734Z	[build] ✓ built in 1.69s
+2026-05-23T14:30:17.734Z	[build] 
+2026-05-23T14:30:17.798Z	Using redirected Wrangler configuration.
+2026-05-23T14:30:17.798Z	 - Configuration being used: "dist/public/wrangler.json"
+2026-05-23T14:30:17.798Z	 - Original user's configuration: "wrangler.jsonc"
+2026-05-23T14:30:17.798Z	 - Deploy configuration file: ".wrangler/deploy/config.json"
+2026-05-23T14:30:18.313Z	🌀 Building list of assets...
+2026-05-23T14:30:18.329Z	✨ Read 434 files from the assets directory /opt/buildhome/repo/dist/public
+2026-05-23T14:30:18.606Z	🌀 Starting asset upload...
+2026-05-23T14:30:20.138Z	No updated asset files to upload. Proceeding with deployment...
+2026-05-23T14:30:20.140Z	Total Upload: 0.33 KiB / gzip: 0.24 KiB
+2026-05-23T14:30:22.654Z	Uploaded jg-estate-services (4.50 sec)
+2026-05-23T14:30:23.097Z	Deployed jg-estate-services triggers (0.44 sec)
+2026-05-23T14:30:23.097Z	  https://jg-estate-services.joe-c0f.workers.dev
+2026-05-23T14:30:23.097Z	Current Version ID: 3c5d15d7-df0d-471e-a258-645b0af75200
+2026-05-23T14:30:23.257Z	Success: Deploy command completed
+2026-05-23T14:30:23.265Z	Skipping build output cache as it's not supported for your project
+2026-05-23T14:30:23.267Z	Uploading to dependency cache
+2026-05-23T14:30:23.271Z	No package-lock.json, pnpm-lock.yaml, yarn.lock, bun.lock, or bun.lockb! Build caching not supported
+2026-05-23T14:30:23.273Z	Failed to upload dependencies to build cache. Skipping.
+2026-05-23T14:30:23.429Z	✨ Success! Build completed.
+2026-05-23T14:30:23.459Z	Detected wrangler autoconfig generated changes to your project. Please run 'npx wrangler setup' in your repo and commit the changes.
