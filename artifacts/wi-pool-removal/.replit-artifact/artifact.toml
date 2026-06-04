@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/wi-pool-removal/"
+title = "WI Pool Removal"
+version = "1.0.0"
+id = "artifacts/wi-pool-removal"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/wi-pool-removal/" ]
+localPort = 24700
+
+[services.development]
+run = "pnpm --filter @workspace/wi-pool-removal run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/wi-pool-removal", "run", "build" ]
+publicDir = "artifacts/wi-pool-removal/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24700"
+BASE_PATH = "/wi-pool-removal/"
