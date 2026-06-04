@@ -5,6 +5,7 @@ import Layout from "./Layout";
 import Breadcrumb from "./Breadcrumb";
 import CtaBanner from "./CtaBanner";
 import type { County } from "@/data/serviceAreas";
+import { setPageMeta } from "@/lib/seo";
 
 const JOBBER_URL =
   "https://clienthub.getjobber.com/hubs/70ad09c0-29e5-4b3f-b648-6642ff3dff80/public/requests/4351309/new";
@@ -18,7 +19,10 @@ interface CountyPageProps {
 
 export default function CountyPage({ county }: CountyPageProps) {
   useEffect(() => {
-    document.title = `${county.name} Above Ground Pool Removal | WI Pool Removal`;
+    setPageMeta(
+      `${county.name} Above Ground Pool Removal | WI Pool Removal`,
+      `Above ground pool removal throughout ${county.name}, Wisconsin. WI Pool Removal drains, disassembles, hauls away, and recycles metal. Locally owned. Call 262-699-0100.`
+    );
   }, [county.name]);
 
   return (

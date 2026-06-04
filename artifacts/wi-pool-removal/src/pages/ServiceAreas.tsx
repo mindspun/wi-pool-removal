@@ -3,6 +3,8 @@ import { Link } from "wouter";
 import { MapPin, ArrowRight } from "lucide-react";
 import Layout from "@/components/Layout";
 import CtaBanner from "@/components/CtaBanner";
+import Breadcrumb from "@/components/Breadcrumb";
+import { setPageMeta } from "@/lib/seo";
 import { counties } from "@/data/serviceAreas";
 
 const NAVY = "#0A1628";
@@ -10,13 +12,17 @@ const AQUA = "#00BCD4";
 
 export default function ServiceAreas() {
   useEffect(() => {
-    document.title = "Above Ground Pool Removal Service Areas | WI Pool Removal";
+    setPageMeta(
+      "Above Ground Pool Removal Service Areas | WI Pool Removal",
+      "WI Pool Removal serves Washington, Ozaukee, Fond du Lac, Sheboygan, and Waukesha counties in Southeast Wisconsin. Above ground pool removal specialists."
+    );
   }, []);
 
   return (
     <Layout>
       <section style={{ background: NAVY }} className="py-14 px-4">
         <div className="max-w-4xl mx-auto">
+          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Service Areas" }]} />
           <div className="flex items-start gap-3">
             <MapPin className="w-8 h-8 mt-1 flex-shrink-0" style={{ color: AQUA }} />
             <div>

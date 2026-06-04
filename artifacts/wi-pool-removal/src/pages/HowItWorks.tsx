@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { Phone } from "lucide-react";
 import Layout from "@/components/Layout";
 import CtaBanner from "@/components/CtaBanner";
+import Breadcrumb from "@/components/Breadcrumb";
+import { setPageMeta } from "@/lib/seo";
 
 const JOBBER_URL =
   "https://clienthub.getjobber.com/hubs/70ad09c0-29e5-4b3f-b648-6642ff3dff80/public/requests/4351309/new";
@@ -71,13 +73,17 @@ const faqs = [
 
 export default function HowItWorks() {
   useEffect(() => {
-    document.title = "How Above Ground Pool Removal Works | WI Pool Removal";
+    setPageMeta(
+      "How Above Ground Pool Removal Works | WI Pool Removal",
+      "Learn how our 6-step above ground pool removal process works — from free quote to final cleanup. Drain, disassemble, haul away, recycle metal. Southeast Wisconsin."
+    );
   }, []);
 
   return (
     <Layout>
       <section style={{ background: NAVY }} className="py-14 px-4">
         <div className="max-w-4xl mx-auto">
+          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "How It Works" }]} />
           <h1 className="text-4xl font-black text-white mb-4">How Above Ground Pool Removal Works</h1>
           <p className="text-xl" style={{ color: "rgba(255,255,255,0.75)" }}>
             Six clear steps from your first call to a clean, open yard.

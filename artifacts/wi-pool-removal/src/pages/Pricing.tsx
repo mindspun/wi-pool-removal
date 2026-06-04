@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { Phone, CheckCircle2 } from "lucide-react";
 import Layout from "@/components/Layout";
 import CtaBanner from "@/components/CtaBanner";
+import Breadcrumb from "@/components/Breadcrumb";
+import { setPageMeta } from "@/lib/seo";
 
 const JOBBER_URL =
   "https://clienthub.getjobber.com/hubs/70ad09c0-29e5-4b3f-b648-6642ff3dff80/public/requests/4351309/new";
@@ -68,13 +70,17 @@ const scenarios = [
 
 export default function Pricing() {
   useEffect(() => {
-    document.title = "Above Ground Pool Removal Pricing | WI Pool Removal";
+    setPageMeta(
+      "Above Ground Pool Removal Pricing | WI Pool Removal",
+      "Transparent above ground pool removal pricing in Southeast Wisconsin. Quotes based on pool size, water volume, access, and condition. No hidden fees. Call 262-699-0100."
+    );
   }, []);
 
   return (
     <Layout>
       <section style={{ background: NAVY }} className="py-14 px-4">
         <div className="max-w-4xl mx-auto">
+          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Pricing" }]} />
           <h1 className="text-4xl font-black text-white mb-4">Pool Removal Pricing</h1>
           <p className="text-xl" style={{ color: "rgba(255,255,255,0.75)" }}>
             Straightforward, upfront quotes. No hidden fees, no surprise charges on service day.

@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { Phone } from "lucide-react";
 import Layout from "@/components/Layout";
 import CtaBanner from "@/components/CtaBanner";
+import Breadcrumb from "@/components/Breadcrumb";
+import { setPageMeta } from "@/lib/seo";
 
 const JOBBER_URL =
   "https://clienthub.getjobber.com/hubs/70ad09c0-29e5-4b3f-b648-6642ff3dff80/public/requests/4351309/new";
@@ -11,7 +13,10 @@ const AQUA = "#00BCD4";
 
 export default function About() {
   useEffect(() => {
-    document.title = "About WI Pool Removal — Above Ground Pool Specialists in West Bend, WI";
+    setPageMeta(
+      "About WI Pool Removal — Above Ground Pool Specialists in West Bend, WI",
+      "Locally owned above ground pool removal specialists based in West Bend, WI. We drain, disassemble, haul away, and recycle metal frames. Above ground pools only."
+    );
   }, []);
 
   return (
@@ -19,6 +24,7 @@ export default function About() {
       {/* Page header */}
       <section style={{ background: NAVY }} className="py-14 px-4">
         <div className="max-w-4xl mx-auto">
+          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "About" }]} />
           <h1 className="text-4xl font-black text-white mb-4">About WI Pool Removal</h1>
           <p className="text-xl" style={{ color: "rgba(255,255,255,0.75)" }}>
             Locally owned above ground pool removal specialists based in West Bend, Wisconsin.

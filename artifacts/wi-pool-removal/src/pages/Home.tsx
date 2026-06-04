@@ -4,6 +4,7 @@ import { Phone, CheckCircle2, ArrowRight, Recycle, Clock, Trash2, Waves } from "
 import Layout from "@/components/Layout";
 import CtaBanner from "@/components/CtaBanner";
 import { counties } from "@/data/serviceAreas";
+import { setPageMeta } from "@/lib/seo";
 
 const JOBBER_URL =
   "https://clienthub.getjobber.com/hubs/70ad09c0-29e5-4b3f-b648-6642ff3dff80/public/requests/4351309/new";
@@ -51,8 +52,10 @@ const localBusinessSchema = {
 
 export default function Home() {
   useEffect(() => {
-    document.title =
-      "WI Pool Removal — Above Ground Pool Removal in Southeast Wisconsin";
+    setPageMeta(
+      "WI Pool Removal — Above Ground Pool Removal in Southeast Wisconsin",
+      "Above ground pool removal serving Southeast Wisconsin. We drain, disassemble, haul away, and recycle metal. Fast scheduling, upfront pricing. Call 262-699-0100."
+    );
   }, []);
 
   return (

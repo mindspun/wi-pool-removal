@@ -2,6 +2,8 @@ import { useEffect } from "react";
 import { Phone, CheckCircle2 } from "lucide-react";
 import Layout from "@/components/Layout";
 import CtaBanner from "@/components/CtaBanner";
+import Breadcrumb from "@/components/Breadcrumb";
+import { setPageMeta } from "@/lib/seo";
 
 const JOBBER_URL =
   "https://clienthub.getjobber.com/hubs/70ad09c0-29e5-4b3f-b648-6642ff3dff80/public/requests/4351309/new";
@@ -20,13 +22,17 @@ const whatToHaveReady = [
 
 export default function Contact() {
   useEffect(() => {
-    document.title = "Contact WI Pool Removal — Free Above Ground Pool Removal Quotes";
+    setPageMeta(
+      "Contact WI Pool Removal — Free Above Ground Pool Removal Quotes",
+      "Get a free above ground pool removal quote in Southeast Wisconsin. Call or text 262-699-0100 or submit online. Fast response, upfront pricing, no hidden fees."
+    );
   }, []);
 
   return (
     <Layout>
       <section style={{ background: NAVY }} className="py-14 px-4">
         <div className="max-w-4xl mx-auto">
+          <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Contact" }]} />
           <h1 className="text-4xl font-black text-white mb-4">Contact WI Pool Removal</h1>
           <p className="text-xl" style={{ color: "rgba(255,255,255,0.75)" }}>
             Call, text, or submit a quote request online. We respond promptly and quote quickly.

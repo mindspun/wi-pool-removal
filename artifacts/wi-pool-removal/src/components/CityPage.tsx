@@ -5,6 +5,7 @@ import Layout from "./Layout";
 import Breadcrumb from "./Breadcrumb";
 import CtaBanner from "./CtaBanner";
 import type { County, City } from "@/data/serviceAreas";
+import { setPageMeta } from "@/lib/seo";
 
 const JOBBER_URL =
   "https://clienthub.getjobber.com/hubs/70ad09c0-29e5-4b3f-b648-6642ff3dff80/public/requests/4351309/new";
@@ -30,8 +31,11 @@ const included = [
 
 export default function CityPage({ county, city }: CityPageProps) {
   useEffect(() => {
-    document.title = `Above Ground Pool Removal in ${city.name}, WI | WI Pool Removal`;
-  }, [city.name]);
+    setPageMeta(
+      `Above Ground Pool Removal in ${city.name}, WI | WI Pool Removal`,
+      `Above ground pool removal in ${city.name}, WI. WI Pool Removal drains, disassembles, hauls away, and recycles metal. Serving ${county.name}. Call 262-699-0100.`
+    );
+  }, [city.name, county.name]);
 
   return (
     <Layout>
@@ -139,7 +143,7 @@ export default function CityPage({ county, city }: CityPageProps) {
                 <Phone className="w-4 h-4" />
                 Call or Text Us
               </a>
-              <p className="text-center text-sm font-semibold text-white">262-699-0100</p>
+              <a href="tel:2626990100" className="block text-center text-sm font-semibold text-white hover:underline">262-699-0100</a>
               <div className="border-t mt-4 pt-4" style={{ borderColor: "rgba(255,255,255,0.1)" }}>
                 <a
                   href={JOBBER_URL}
