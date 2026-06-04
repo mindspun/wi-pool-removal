@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { Phone, CheckCircle2, ArrowRight, Recycle, Clock, Trash2, Waves } from "lucide-react";
 import Layout from "@/components/Layout";
 import CtaBanner from "@/components/CtaBanner";
+import Breadcrumb from "@/components/Breadcrumb";
 import { counties } from "@/data/serviceAreas";
 import { setPageMeta } from "@/lib/seo";
 
@@ -68,6 +69,7 @@ export default function Home() {
       {/* Hero */}
       <section style={{ background: NAVY }} className="py-20 px-4">
         <div className="max-w-5xl mx-auto">
+          <Breadcrumb items={[{ label: "Home" }]} />
           <div className="inline-flex items-center gap-2 text-sm font-semibold px-3 py-1.5 rounded-full mb-6" style={{ background: "rgba(0,188,212,0.15)", color: AQUA }}>
             <Waves className="w-4 h-4" />
             Above Ground Pool Removal — Southeast Wisconsin
