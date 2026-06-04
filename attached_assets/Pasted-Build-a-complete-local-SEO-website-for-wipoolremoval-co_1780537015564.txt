@@ -1,0 +1,190 @@
+Build a complete local SEO website for wipoolremoval.com — an above ground pool removal company serving Southeast Wisconsin. The company demolishes and hauls away above ground pools of all sizes for homeowners who no longer want their pool, are selling their home, or need the yard space back.
+Important Service Clarification
+This company removes above ground pools only — no in-ground pool demolition. This must be clearly stated on every page. Position this as a specialty service: above ground pool removal is labor intensive, requires proper disposal of liner, water, metal, and decking materials, and is not something most junk removal companies handle well.
+Brand & Style
+This site must feel completely unique from all previous sites. Use a bold, full-width section layout with a summer pool aesthetic that is professional and confident.
+
+Color scheme: bold aqua (#00BCD4 or similar), deep navy (#0A1628 or similar), and bright white — use aqua as the primary accent, navy for dark sections, white for content areas
+Layout: big bold hero with full-width alternating sections — navy background sections followed by white sections, aqua used for CTAs, borders, highlights, and accents throughout
+Strong oversized typography in the hero — this site should make an immediate visual impact
+Summer pool feel without being cheesy — think clean, bold, professional
+Business name: WI Pool Removal
+Phone: 262-699-0100 (call or text)
+All phone numbers must be clickable tel: links
+Tone throughout: confident, direct, knowledgeable — speak to homeowners who are done with pool maintenance, selling their home, or reclaiming their yard
+
+Breadcrumb Navigation
+Every page must include breadcrumb navigation below the main header using structured data markup:
+
+Homepage: Home
+County pages: Home > Service Area > [County Name]
+City pages: Home > Service Area > [County Name] > [City Name]
+All other pages: Home > [Page Name]
+Breadcrumbs must also include BreadcrumbList schema markup in JSON-LD on every page
+
+Content Guidelines
+Every page must have a minimum of 300 words of genuine, useful content. Write from deep familiarity with above ground pool ownership and removal. Homeowners with above ground pools face real problems — aging pools that leak, rust, or become safety hazards, pools that take up yard space they want back, pools that hurt home sale value, pools that are expensive to maintain. Write content that speaks directly to these pain points and positions WI Pool Removal as the fast, professional solution. Cover the removal process naturally — draining the water, disassembling the structure, removing the liner, hauling away all metal, decking, and materials. Emphasize responsible disposal and recycling of metal components. Naturally weave in service keywords without keyword stuffing.
+Pages to Build
+1. index.html (Homepage)
+
+Oversized bold hero section — headline something like "Above Ground Pool Removal Done Right. Serving Southeast Wisconsin." with a strong subheadline about reclaiming yard space and a dual CTA: Call/Text + Get a Free Quote
+Full-width navy section: What We Do — explain the complete above ground pool removal process in detail: draining, disassembly, liner removal, metal and frame hauling, deck removal if applicable, site cleanup. Make clear this is above ground only
+Full-width white section: Why Remove Your Pool — speak to the real reasons homeowners remove pools: maintenance costs, safety concerns, selling a home, kids grown up, yard space, HOA pressure, aging pool that is past its prime
+Full-width aqua-accented section: Service highlights with icons or bold text — Fast Scheduling, Full Cleanup, Responsible Disposal, Metal Recycled, Above Ground Specialists
+Trust section: responsible disposal commitment — metal components recycled, liner disposed of properly, site left clean
+Full-width navy section: Service area overview mentioning all 5 counties with link to service area page
+Pricing note: pricing based on pool size and complexity — call or text for a custom quote
+Bold full-width CTA section at bottom with aqua background
+
+2. about.html
+
+Write a genuine company story — position WI Pool Removal as specialists who understand above ground pools inside and out
+Talk about why above ground pool removal is a specialty — these pools have thousands of gallons of water to drain, metal frames that need proper disassembly, liners that require disposal, and decking that may need to come down too
+Speak to the homeowner who has been putting this off for years — the pool that has not been opened in three summers, the rusting frame, the faded liner
+Explain the full removal process step by step in narrative form
+Talk about metal recycling — frames and uprights are recycled whenever possible
+Explain the service area and local Wisconsin presence
+Phone CTA
+
+3. pricing.html
+
+Explain that pricing is based on pool size, complexity, and site conditions — no flat rate because every pool and every yard is different
+Help the reader understand what factors affect price:
+
+Pool diameter and height — a 12 foot round pool is very different from a 30 foot oval
+Whether decking needs to be removed
+Water volume remaining in the pool and drainage situation
+Access to the backyard — gate width, obstacles, distance to haul
+Condition of the pool — older rusted pools can be more labor intensive
+Number of uprights and frame complexity
+
+
+Give example scenarios to help customers ballpark their situation
+Explain what is always included: full disassembly, all materials hauled away, site cleanup, metal recycled
+No hidden fees messaging
+Call or text 262-699-0100 for a free custom quote
+Get a Free Quote button linking to Jobber form
+Link to contact page
+
+4. process.html (How It Works)
+This site gets a dedicated process page — above ground pool removal has enough steps to warrant it:
+
+Step 1: Free Quote — call or text, describe the pool, get a price
+Step 2: Schedule — fast scheduling, often same week
+Step 3: Drain — water is drained safely on site
+Step 4: Disassemble — liner removed, frame taken apart methodically
+Step 5: Haul Away — all materials loaded and removed from the property
+Step 6: Cleanup — site left clean, yard ready for whatever comes next
+Write 100+ words per step explaining what happens and why it matters
+Address common concerns: will it damage my yard, what happens to the liner, how long does it take, do I need to be home
+Phone CTA and link to contact page
+
+5. service-area.html (Main Service Area Page)
+
+Strong intro about above ground pool removal across Southeast Wisconsin — why local matters, fast response, familiarity with Wisconsin summer pool ownership
+Write a genuine paragraph for each county covering pool ownership culture there, types of properties, and why homeowners in that area are removing pools
+Washington County
+Ozaukee County
+Fond du Lac County
+Sheboygan County
+Waukesha County
+Link to each county page and city pages
+BreadcrumbList schema: Home > Service Area
+LocalBusiness schema on this page as well
+
+6. County Pages (one per county)
+
+washington-county.html
+ozaukee-county.html
+fond-du-lac-county.html
+sheboygan-county.html
+waukesha-county.html
+
+Each county page must have 300+ words of real content:
+
+Breadcrumb: Home > Service Area > [County Name]
+Open with a paragraph about above ground pool ownership in that specific county — suburban neighborhoods, rural properties, lake communities, aging housing stock with older pools
+Talk about the common reasons homeowners in that county are removing pools — home sales, maintenance fatigue, yard reclamation, safety
+Explain how WI Pool Removal serves that county quickly and professionally
+List cities served with links to city pages
+Link to process page and pricing page
+Phone CTA and link to contact page
+
+7. City Pages
+Create individual city pages for the following cities:
+Washington County:
+
+West Bend, Hartford, Germantown, Slinger, Jackson, Kewaskum, Richfield, Newburg, Allenton, Hubertus
+
+Ozaukee County:
+
+Port Washington, Cedarburg, Grafton, Mequon, Saukville, Thiensville, Belgium, Fredonia, Newburg, Bayside
+
+Fond du Lac County:
+
+Fond du Lac, Ripon, Waupun, Beaver Dam, Campbellsport, Oakfield, North Fond du Lac, Lomira, Rosendale, Brandon
+
+Sheboygan County:
+
+Sheboygan, Sheboygan Falls, Plymouth, Kohler, Random Lake, Elkhart Lake, Oostburg, Cedar Grove, Adell, Howards Grove
+
+Waukesha County:
+
+Waukesha, Pewaukee, Oconomowoc, Menomonee Falls, Brookfield, Mukwonago, Sussex, Hartland, Elm Grove, New Berlin
+
+Each city page must have 300+ words of genuine content:
+
+Breadcrumb: Home > Service Area > [County Name] > [City Name]
+Open with a paragraph speaking directly to homeowners in that specific city with an above ground pool they want removed — mention the city naturally throughout
+Talk about the types of properties and neighborhoods in that city and how above ground pools fit into that landscape
+Speak to the common reasons for removal in that market — aging pools, home sales, yard renovation, maintenance fatigue
+Clearly explain the service: above ground pool removal only, full disassembly and haul away, metal recycled, site cleaned up
+Mention neighboring cities also served
+Link to process page and pricing page
+Phone CTA (call or text 262-699-0100)
+Link to contact page
+
+8. contact.html
+
+Breadcrumb: Home > Contact
+Bold, direct opening — ready to get that pool out of your yard? Call or text and we will get you a quote fast
+Explain what to have ready: pool size (diameter and shape), whether there is decking, backyard access situation, general location
+Phone number prominently displayed (call or text 262-699-0100)
+Get a Free Quote button linking to:
+https://clienthub.getjobber.com/hubs/70ad09c0-29e5-4b3f-b648-6642ff3dff80/public/requests/4351309/new
+Open that link in a new tab
+Reiterate above ground only
+Link to process page so they know what to expect
+
+Technical Requirements
+
+Pure HTML and CSS only — no JavaScript frameworks, no dependencies
+Single external stylesheet: styles.css
+Bold full-width section layout throughout — sections alternate between navy, white, and aqua-accented backgrounds
+Consistent header with navigation and phone number on every page — navy background header with aqua accent on phone number
+Navigation: Home, About, How It Works, Pricing, Service Area, Contact
+Consistent footer: navy background, white text, phone number, service area summary, above ground only disclaimer, copyright
+Breadcrumb navigation on every page below the header — structured with BreadcrumbList JSON-LD schema
+All pages must have unique <title> and <meta description> tags optimized for local SEO
+LocalBusiness schema JSON-LD on homepage
+Mobile responsive using CSS flexbox or grid
+Hero section must be visually impactful — oversized text, full-width background, strong CTA buttons in aqua
+All internal links must work correctly relative to root
+Fast loading — no unnecessary images or scripts
+
+SEO Focus Keywords Per Page
+
+Homepage: above ground pool removal Wisconsin, pool removal Southeast Wisconsin, WI pool removal
+About: above ground pool removal company Wisconsin, pool demolition WI
+Pricing: above ground pool removal cost Wisconsin, pool removal price WI
+Process: how above ground pool removal works Wisconsin, pool removal process WI
+County pages: [County] above ground pool removal, pool removal [County] WI
+City pages: [City] WI above ground pool removal, pool removal [City] Wisconsin
+Contact: above ground pool removal quote Wisconsin, schedule pool removal WI
+
+After Building All Files
+
+Initialize a git repository in this project folder
+Add all files
+Commit with message "initial site build - wipoolremoval.com"
+Push to GitHub repo named wi-pool-removal
