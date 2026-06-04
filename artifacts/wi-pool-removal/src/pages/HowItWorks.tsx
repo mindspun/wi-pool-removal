@@ -15,7 +15,7 @@ const steps = [
   {
     number: "01",
     title: "Get a Free Quote",
-    content: `Call or text us at 262-699-0100 or submit a request through our online form. We'll ask you a few quick questions: What's the approximate size of your pool? Round, oval, or rectangular? Is there attached decking? Roughly how old is the pool and is it still standing? What's the access situation — is there a gate, and how wide is it?\n\nFrom there, we give you a price. Most quotes are done over the phone or text without needing to send someone out for a site visit. We'll confirm the price in writing so you have it on record. No obligation — if the price doesn't work for you, no problem.`,
+    content: `Call or text us, or submit a request through our online form. We'll ask you a few quick questions: What's the approximate size of your pool? Round, oval, or rectangular? Is there attached decking? Roughly how old is the pool and is it still standing? What's the access situation — is there a gate, and how wide is it?\n\nFrom there, we give you a price. Most quotes are done over the phone or text without needing to send someone out for a site visit. We'll confirm the price in writing so you have it on record. No obligation — if the price doesn't work for you, no problem.`,
   },
   {
     number: "02",
@@ -167,7 +167,7 @@ export default function HowItWorks() {
 
       <CtaBanner
         heading="Questions About the Process?"
-        subtext="Call us at 262-699-0100 — we're happy to walk you through exactly what to expect for your specific pool."
+        subtext="Happy to walk you through exactly what to expect for your specific pool."
       />
     </Layout>
   );

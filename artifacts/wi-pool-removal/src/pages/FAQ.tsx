@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     q: "How quickly can you schedule the removal?",
-    a: "We typically schedule jobs within 1 to 2 weeks of a confirmed quote, depending on our current calendar. Call or text us at 262-699-0100 and we'll give you a realistic timeframe for your area.",
+    a: "We typically schedule jobs within 1 to 2 weeks of a confirmed quote, depending on our current calendar. Call or text us and we'll give you a realistic timeframe for your area.",
   },
   {
     q: "What counties do you serve?",
@@ -49,7 +49,7 @@ const faqs = [
   },
   {
     q: "What information do I need to get a quote?",
-    a: "To quote your job accurately, it helps to know: the pool's approximate diameter or dimensions, whether it's round, oval, or rectangular, roughly how full of water it currently is, and any access challenges (narrow gates, steep yards, etc.). A photo is always helpful. You can submit a quote request online or call us at 262-699-0100.",
+    a: "To quote your job accurately, it helps to know: the pool's approximate diameter or dimensions, whether it's round, oval, or rectangular, roughly how full of water it currently is, and any access challenges (narrow gates, steep yards, etc.). A photo is always helpful. You can submit a quote request online or call us directly.",
   },
   {
     q: "Is WI Pool Removal locally owned?",

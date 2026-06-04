@@ -101,7 +101,9 @@ export default function About() {
             Ready to Talk About Your Pool?
           </h2>
           <p className="mb-6" style={{ color: "rgba(255,255,255,0.75)" }}>
-            Call or text us at 262-699-0100 for a free, no-obligation estimate. We'll ask a few quick questions about your pool and give you a clear price.
+            Call or text us at{" "}
+            <a href="tel:2626990100" className="font-bold underline" style={{ color: "#00BCD4" }}>262-699-0100</a>{" "}
+            for a free, no-obligation estimate. We'll ask a few quick questions about your pool and give you a clear price.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a

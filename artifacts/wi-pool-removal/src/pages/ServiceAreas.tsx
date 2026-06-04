@@ -10,6 +10,29 @@ import { counties } from "@/data/serviceAreas";
 const NAVY = "#0A1628";
 const AQUA = "#00BCD4";
 
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "WI Pool Removal",
+  description:
+    "Above ground pool removal company serving Southeast Wisconsin. We drain, disassemble, haul away, and recycle metal components. Above ground pools only.",
+  telephone: "+1-262-699-0100",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "West Bend",
+    addressRegion: "WI",
+    addressCountry: "US",
+  },
+  areaServed: [
+    "Washington County, WI",
+    "Ozaukee County, WI",
+    "Fond du Lac County, WI",
+    "Sheboygan County, WI",
+    "Waukesha County, WI",
+  ],
+  url: "https://www.wipoolremoval.com",
+};
+
 export default function ServiceAreas() {
   useEffect(() => {
     setPageMeta(
@@ -20,6 +43,10 @@ export default function ServiceAreas() {
 
   return (
     <Layout>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
       <section style={{ background: NAVY }} className="py-14 px-4">
         <div className="max-w-4xl mx-auto">
           <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Service Areas" }]} />
