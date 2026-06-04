@@ -7,9 +7,12 @@
     "dev": "vite --config vite.config.ts --host 0.0.0.0",
     "build": "vite build --config vite.config.ts",
     "serve": "vite preview --config vite.config.ts --host 0.0.0.0",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "deploy": "pnpm run build && wrangler deploy",
+    "preview": "pnpm run build && wrangler dev"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.40.0",
     "@replit/vite-plugin-cartographer": "^0.5.1",
     "@replit/vite-plugin-dev-banner": "^0.1.1",
     "@replit/vite-plugin-runtime-error-modal": "^0.0.6",
@@ -30,7 +33,8 @@
     "tailwindcss": "^4.1.14",
     "tw-animate-css": "^1.4.0",
     "vite": "^7.3.2",
-    "wouter": "^3.3.5"
+    "wouter": "^3.3.5",
+    "wrangler": "^4.98.0"
   },
   "pnpm": {
     "overrides": {
