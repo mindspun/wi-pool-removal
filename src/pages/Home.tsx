@@ -86,23 +86,32 @@ export default function Home() {
               <p className="text-sm font-semibold mb-8 px-3 py-1.5 rounded-full inline-block" style={{ background: "rgba(255,255,255,0.08)", color: "rgba(255,255,255,0.6)" }}>
                 Above ground pools only — we do not remove in-ground pools
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-3">
                 <a
                   href="tel:2626990100"
-                  className="flex items-center justify-center gap-2 font-bold px-8 py-4 rounded-xl text-lg text-white shadow-xl transition-opacity hover:opacity-90"
-                  style={{ background: AQUA }}
+                  className="inline-flex items-center justify-center gap-2.5 whitespace-nowrap font-bold px-7 py-3.5 rounded-lg text-base text-white transition-all hover:brightness-110 active:scale-95"
+                  style={{
+                    background: `linear-gradient(135deg, ${AQUA} 0%, #00a5bb 100%)`,
+                    boxShadow: `0 4px 20px rgba(0,188,212,0.40)`,
+                    letterSpacing: "0.01em",
+                  }}
                 >
-                  <Phone className="w-5 h-5" />
+                  <Phone className="w-4 h-4 flex-shrink-0" />
                   Call or Text 262-699-0100
                 </a>
                 <a
                   href={JOBBER_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 font-semibold px-8 py-4 rounded-xl text-lg border-2 text-white transition-colors hover:bg-white/10"
-                  style={{ borderColor: "rgba(255,255,255,0.35)" }}
+                  className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-semibold px-7 py-3.5 rounded-lg text-base text-white transition-all hover:bg-white/10 active:scale-95"
+                  style={{
+                    border: "1.5px solid rgba(255,255,255,0.30)",
+                    background: "rgba(255,255,255,0.05)",
+                    letterSpacing: "0.01em",
+                  }}
                 >
                   Get a Free Quote Online
+                  <ArrowRight className="w-4 h-4 flex-shrink-0" />
                 </a>
               </div>
             </div>
